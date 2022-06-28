@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste - Estágio - Target Sistemas</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Teste - Estágio - Target Sistemas</h1>
+    </header>
+    <main>
+      <section>
+        <h2>
+          Questão: Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o
+          próximo valor sempre será a soma dos 2 valores anteriores (exemplo: 0,
+          1, 1, 2, 3, 5, 8, 13, 21, 34...), escreva um programa na linguagem que
+          desejar onde, informado um número, ele calcule a sequência de
+          Fibonacci e retorne uma mensagem avisando se o número informado
+          pertence ou não a sequência.
+        </h2>
+        <div class="interativo">
+          <label for="number-fibonacci">Insira um número: </label>
+          <input type="number" name="number-fibonacci" id="number-fibonacci" />
+          <input
+            type="button"
+            value="Verificar"
+            onclick="hasInFibonacciSequence()"
+          />
+          <p id="fibonacci"></p>
+        </div>
+      </section>
+
+      <section>
+        <h2>
+          Questão: Dado um vetor que guarda o valor de faturamento diário de uma
+          distribuidora, faça um programa, na linguagem que desejar, que calcule
+          e retorne:
+        </h2>
+        <ul>
+          <li>O menor valor de faturamento ocorrido em um dia do mês;</li>
+          <li>O maior valor de faturamento ocorrido em um dia do mês;</li>
+          <li>
+            Número de dias no mês em que o valor de faturamento diário foi
+            superior à média mensal.
+          </li>
+        </ul>
+
+        <div class="interativo">
+          <p>Faturamento</p>
+          <input
+            type="button"
+            value="Detalhes"
+            onclick="detalhesFaturamento()"
+          />
+          <p id="faturamento"></p>
+        </div>
+      </section>
+
+      <section>
+        <h2>
+          Questão: Dado um vetor que guarda o valor de faturamento diário de uma
+          distribuidora, faça um programa, na linguagem que desejar, que calcule
+          e retorne:
+        </h2>
+
+        <p>
+          Dado o valor de faturamento mensal de uma distribuidora, detalhado por
+          estado:
+        </p>
+        <ul>
+          <li>SP – R$67.836,43</li>
+          <li>RJ – R$36.678,66</li>
+          <li>MG – R$29.229,88</li>
+          <li>ES – R$27.165,48</li>
+          <li>Outros – R$19.849,53</li>
+        </ul>
+
+        <p>
+          Escreva um programa na linguagem que desejar onde calcule o percentual
+          de representação que cada estado teve dentro do valor total mensal da
+          distribuidora.
+        </p>
+
+        <div class="interativo">
+          <input
+            type="button"
+            value="Detalhes"
+            onclick="detalhesFaturamentoPorEstado()"
+          />
+          <p id="faturamentoPorEstados"></p>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
